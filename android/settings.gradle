@@ -1,0 +1,3 @@
+rootProject.name = 'AwesomeNavigator_1'
+
+include ':app'
