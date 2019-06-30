@@ -6,9 +6,14 @@ import {
 } from "react-navigation";
 import { HomeScreen, DetailsScreen, Page2 } from "./src/pages/";
 
+const TabNavigator = createBottomTabNavigator({
+  Home: HomeScreen,
+  Page2: Page2
+});
+
 const StackNavigator = createStackNavigator(
   {
-    Home: HomeScreen,
+    Home: TabNavigator,
     Details: DetailsScreen
   },
   {
@@ -16,11 +21,7 @@ const StackNavigator = createStackNavigator(
   }
 );
 
-const TabNavigator = createBottomTabNavigator({
-  Home: StackNavigator,
-  Page2: Page2
-});
-const AppContainer = createAppContainer(TabNavigator);
+const AppContainer = createAppContainer(StackNavigator);
 
 export default class App extends React.Component {
   render() {
