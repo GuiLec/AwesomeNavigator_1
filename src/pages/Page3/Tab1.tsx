@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-export class Page2 extends React.Component {
+export class Tab1 extends React.Component {
   render() {
     return (
       <View
@@ -9,10 +9,10 @@ export class Page2 extends React.Component {
           flex: 1,
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "orange"
+          backgroundColor: "brown"
         }}
       >
-        <Text>Page 2</Text>
+        <Text>Page 3 - Tab 1</Text>
       </View>
     );
   }

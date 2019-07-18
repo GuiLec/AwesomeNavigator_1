@@ -1,7 +1,8 @@
 import React from "react";
 import { View, Text } from "react-native";
+import { DrawerItemsProps } from "react-navigation";
 
-export class Page2 extends React.Component {
+export class DrawerScreen extends React.Component<DrawerItemsProps> {
   render() {
     return (
       <View
@@ -9,10 +10,10 @@ export class Page2 extends React.Component {
           flex: 1,
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "orange"
+          backgroundColor: "blue"
         }}
       >
-        <Text>Page 2</Text>
+        <Text>Drawer screen</Text>
       </View>
     );
   }
